@@ -1,0 +1,62 @@
+<html>
+<header>
+    <meta name="description" content="">
+    <meta name="keywords" content="dermatologia,dermatolog,wrocław,medycyna,estetyczna,laseroterapia,łuszczyca,trądzik,zmarszczki,pajączki">
+</header>
+
+<body>
+    <link rel="stylesheet" href="styles.css">
+
+    <div class="navbar">
+        <a href="javascript:hideshow(document.getElementById('adiv'))">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="main">
+        <div class="container">
+            <p>
+                Lorem ips
+            </p>
+            <div id="adiv">
+                <p>
+                    Lorem ipsumdolorroLorem ipsumdolorroLorem ipsumdolorroLorem ipsumdolorroLorem ipsumdolorroLorem ipsumdolorroLorem ipsumdolorroLorem
+                    ipsumdolorroLorem ipsumdolorroLorem ipsumdolorroLorem ipsumdolorroLorem ipsumdolorroLorem ipsumdolorroLorem
+                    ipsumdolorro
+                </p>
+            </div>
+            <p>
+                Lorem ips
+            </p>
+            <p>
+                Lorem ips
+            </p>
+            <p>
+                Lorem ips
+            </p>
+            <p>
+                Lorem ips
+            </p>
+        </div>
+    </div>
+    <div class="footer">
+        <p id="date_string"/>
+        <p>ESDERM.PL All copy rights reserved.</p>
+    </div>
+</body>
+<script type="text/javascript">
+    function hideshow(which) {
+        if (!document.getElementById)
+            return
+        if (which.style.display == "block")
+            which.style.display = "none"
+        else
+            which.style.display = "block"
+    }
+    function updateCurrentDate() {
+        document.getElementById("date_string").innerHTML = (new Date(Date.now()).getFullYear().toString());
+    }
+    updateCurrentDate();
+</script>
+
+</html>
