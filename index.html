@@ -2,56 +2,63 @@
 <header>
     <meta name="description" content="">
     <meta name="keywords" content="dermatologia,dermatolog,wrocław,medycyna,estetyczna,laseroterapia,łuszczyca,trądzik,zmarszczki,pajączki">
+    <link rel="stylesheet" href="styles.css" async>
+    <!-- <link rel="stylesheet" href="https://drive.google.com/uc?export=view&id=170M4-fwaUBR5GFY3ESbuvZ6cOkY_u-eI" async> -->
 </header>
 
 <body>
-    <link rel="stylesheet" href="styles.css">
-
-    <div class="navbar">
-        <a href="javascript:hideshow(document.getElementById('adiv'))">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-    </div>
-
-    <div class="main">
-        <div class="container">
-            <p>
-                Lorem ips
-            </p>
-            <div id="adiv">
-                <p>
-                    Lorem ipsumdolorroLorem ipsumdolorroLorem ipsumdolorroLorem ipsumdolorroLorem ipsumdolorroLorem ipsumdolorroLorem ipsumdolorroLorem
-                    ipsumdolorroLorem ipsumdolorroLorem ipsumdolorroLorem ipsumdolorroLorem ipsumdolorroLorem ipsumdolorroLorem
-                    ipsumdolorro
-                </p>
-            </div>
-            <p>
-                Lorem ips
-            </p>
-            <p>
-                Lorem ips
-            </p>
-            <p>
-                Lorem ips
-            </p>
-            <p>
-                Lorem ips
-            </p>
+    <div id="gradColor">
+        <div class="navbar">
+            <img src="logo.png" alt="ESDERM" height="42">
+            <a href="javascript:hideshow(document.getElementById('adivHome'))">Home</a>
+            <a href="javascript:hideshow(document.getElementById('adivAbout'))">About</a>
+            <a href="javascript:hideshow(document.getElementById('adivServices'))">Services</a>
+            <a href="javascript:hideshow(document.getElementById('adivContact'))">Contact</a>
         </div>
-    </div>
-    <div class="footer">
-        <p id="date_string"/>
-        <p>ESDERM.PL All copy rights reserved.</p>
+
+        <div class="main">
+            <div id="adivHome">
+                Welcome to ESDERM!
+                <video width="100%" height="auto" autoplay loop>
+                    <source src="https://drive.google.com/uc?export=view&id=1TL13FFlZwhC4oRfj27fO4R7I4SqBOjOH" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div id="adivAbout">
+                Our crew:
+            </div>
+
+            <div id="adivServices">
+                Prices:
+            </div>
+
+            <div id="adivContact">
+                Contact us:
+            </div>
+        </div>
+
+        <div class="footer">
+            <p id="date_string" />
+            <p>All copy rights reserved by ESDERM.</p>
+        </div>
     </div>
 </body>
 <script type="text/javascript">
+    let arrayOfSwitchedDivs = ["adivHome", "adivAbout", "adivServices", "adivContact"];
     function hideshow(which) {
-        if (!document.getElementById)
+        if (!document.getElementById) {
             return
-        if (which.style.display == "block")
-            which.style.display = "none"
-        else
+        }
+        for (var i = 0; i < arrayOfSwitchedDivs.length; i++) {
+            document.getElementById(arrayOfSwitchedDivs[i]).style.display = "none";
+        }
+        if (which.style.display == "block") {
+            which.style.display = "none";
+        }
+        else {
             which.style.display = "block"
+        }
     }
     function updateCurrentDate() {
         document.getElementById("date_string").innerHTML = (new Date(Date.now()).getFullYear().toString());
