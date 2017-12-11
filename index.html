@@ -3,17 +3,21 @@
     <meta name="description" content="">
     <meta name="keywords" content="dermatologia,dermatolog,wrocław,medycyna,estetyczna,laseroterapia,łuszczyca,trądzik,zmarszczki,pajączki">
     <link rel="stylesheet" href="styles.css" async>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" async>
     <!-- <link rel="stylesheet" href="https://drive.google.com/uc?export=view&id=170M4-fwaUBR5GFY3ESbuvZ6cOkY_u-eI" async> -->
 </header>
 
 <body>
     <div id="gradColor">
         <div class="navbar">
-            <img src="logo.png" alt="ESDERM" height="42">
-            <a href="javascript:hideshow(document.getElementById('adivHome'))">Home</a>
-            <a href="javascript:hideshow(document.getElementById('adivAbout'))">About</a>
-            <a href="javascript:hideshow(document.getElementById('adivServices'))">Services</a>
-            <a href="javascript:hideshow(document.getElementById('adivContact'))">Contact</a>
+            <img src="logo.png" alt="ESDERM" height="35px">
+            <div class="row">
+                    <a href="javascript:hideshow(document.getElementById('adivHome'))">Home</a>
+                    <a href="javascript:hideshow(document.getElementById('adivAbout'))">About</a>
+                    <a href="javascript:hideshow(document.getElementById('adivServices'))">Services</a>
+                    <a href="javascript:hideshow(document.getElementById('adivContact'))">Contact</a>
+            </div>
+            <i class="fa fa-facebook-square" style="font-size:3vw;color:rgba(71,111,181,0.8)"></i>
         </div>
 
         <div class="main">
@@ -37,6 +41,8 @@
                 Contact us:
             </div>
         </div>
+
+        <div id="map"></div>
 
         <div class="footer">
             <p id="date_string" />
@@ -64,6 +70,22 @@
         document.getElementById("date_string").innerHTML = (new Date(Date.now()).getFullYear().toString());
     }
     updateCurrentDate();
+</script>
+<script>
+    function initMap() {
+      var uluru = {lat: -25.363, lng: 131.044};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 4,
+        center: uluru
+      });
+      var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+      });
+    }
+  </script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXclGsjaWgaWTXAB_EtSCbZuuHLeX4MUA&callback=initMap">
 </script>
 
 </html>

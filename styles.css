@@ -2,9 +2,7 @@ html {
   background: url(https://gdurl.com/YKgh);
   background-repeat: no-repeat;
   background-size: cover;
-  font-size:110%;
  }
- @media(min-width:60em){html{font-size: 90%}}
 body {margin:0;}
 
 .navbar {
@@ -13,6 +11,7 @@ body {margin:0;}
   position: fixed;
   top: 0;
   width: 100%;
+  height: 35px;
   justify-content: center;
   align-content: center;
 }
@@ -25,15 +24,19 @@ body {margin:0;}
   align-content: center;
   text-align: center;
   /* padding: 1px 3px; */
-  margin: 2vw;
+  margin: 5px;
   text-decoration: none;
   font-size: 19px;
-  font-size: 3.2vw;
 }
 
 .navbar img {
-  /* display: inline-block; */
-  margin: 2vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.navbar row {
+  flex-direction: row;
 }
 
 .main {
@@ -53,5 +56,10 @@ body {margin:0;}
 .footer p {
     color: rgba(70,111,181,1.0);
     text-align: center;
-    font-size: 3.1vw;
+    font-size: 19px;
 }
+
+map {
+  height: 400px;
+  width: 100%;
+ }
