@@ -1,54 +1,221 @@
 <html>
 <header>
+    <!-- <meta http-equiv="refresh" content="3"> -->
     <meta name="description" content="">
     <meta name="keywords" content="dermatologia,dermatolog,wrocław,medycyna,estetyczna,laseroterapia,łuszczyca,trądzik,zmarszczki,pajączki">
     <link rel="stylesheet" href="styles.css" async>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" async>
-    <!-- <link rel="stylesheet" href="https://drive.google.com/uc?export=view&id=170M4-fwaUBR5GFY3ESbuvZ6cOkY_u-eI" async> -->
 </header>
 
 <body>
-    <div id="gradColor">
-        <div class="navbar">
-            <img src="logo.png" alt="ESDERM" height="35px">
-            <div class="row">
-                    <a href="javascript:hideshow(document.getElementById('adivHome'))">Home</a>
-                    <a href="javascript:hideshow(document.getElementById('adivAbout'))">About</a>
-                    <a href="javascript:hideshow(document.getElementById('adivServices'))">Services</a>
-                    <a href="javascript:hideshow(document.getElementById('adivContact'))">Contact</a>
-            </div>
+
+    <div class="navbar">
+        <div class="svgLogo">
+            <svg height="60%" viewBox="0 0 1000 170" preserveAspectRatio="xMidYMid meet" style="border: 2px solid #00FFFF;">
+                <defs>
+
+                    <!-- UNIVERSAL -->
+                    <path fill="#003468" id="l" d="
+                                m10 0 
+                                L15 5 
+                                L15 150 
+                                L10 155 
+                                L20 155 
+                                L20 0 
+                                z" />
+                    <path fill="#003468" id="|" d="
+                                m30 0 
+                                L30 155 
+                                L35 155 
+                                L35 0 
+                                z" />
+
+                    <!-- E SPECIFIC -->
+                    <path fill="#003468" id="low-" d="
+                                m30 150 
+                                L75 150 
+                                L85 145 
+                                L80 155 
+                                L30 155 
+                                z" />
+                    <path fill="#003468" id="mid-" d="
+                                m30 70 
+                                L69 70 
+                                L75 66 
+                                L75 78 
+                                L69 75 
+                                L30 75 
+                                z" />
+                    <path fill="#003468" id="top-" d="
+                                m30 0 
+                                L75 0 
+                                L78 10 
+                                L72 5 
+                                L30 5 
+                                z" />
+
+                    <!-- S SPECIFIC -->
+                    <path fill="#003468" id="lowS" d="
+                                m30 135 
+                                C0,30 0,0 50,150
+                                " />
+
+                    <!-- D and R SPECIFIC -->
+                    <path fill="#003468" id="low-D" d="
+                                m30 155
+                                L70 155
+                                L55 150
+                                L30 150
+                                " />
+
+                    <path fill="#003468" id="top-D" d="
+                                m30 0
+                                L70 0
+                                L55 5
+                                L30 5
+                                " />
+
+                    <!-- R SPECIFIC -->
+                    <path fill="#003468" id="mid-R" d="
+                                m30 75
+                                L55 75
+                                L55 70
+                                L30 70
+                                " />
+
+                    <!-- M SPECIFIG -->
+                    <path fill="#003468" id="lsM" d="
+                                m30 155 
+                                L35 5 
+                                L40 20 
+                                L35 150 
+                                L39 155
+                                L30 155
+                                L26 155
+                                L30 150
+                                z" />
+
+                    <path fill="#003468" id="usM" d="
+                                m30 0
+                                L38 0
+                                L39 5
+                                L99 150
+                                L95 155
+                                L35 13
+                                L32 5
+                                L25 0
+                                z" />
+
+                    <path fill="#003468" id="usmlvM" d="
+                                m30 0
+                                L40 0
+                                L36 3
+                                L92 138
+                                L88 145
+                                L28 0
+                                " />
+
+                    <path fill="#003468" id="usmrvM" d="
+                                m89 145
+                                L88 134
+                                L138 10
+                                L140 20
+                                z
+                                " />
+
+                    <path fill="#003468" id="usmrlM" d="
+                                m30 0
+                                L40 0
+                                L40 10
+                                L92 140
+                                z
+                                " />
+
+                </defs>
+                <symbol id="E">
+                    <use x="0" y="10" xlink:href="#l" />
+                    <use x="-5" y="10" xlink:href="#|" />
+                    <use x="0" y="10" xlink:href="#low-" />
+                    <use x="0" y="10" xlink:href="#mid-" />
+                    <use x="0" y="10" xlink:href="#top-" />
+                </symbol>
+                <symbol id="S">
+
+                </symbol>
+                <symbol id="D">
+                    <use x="0" y="10" xlink:href="#l" />
+                    <use x="-5" y="10" xlink:href="#|" />
+                    <use x="0" y="10" xlink:href="#top-D" />
+                    <use x="0" y="10" xlink:href="#low-D" />
+                </symbol>
+                <symbol id="R">
+                    <use x="0" y="10" xlink:href="#l" />
+                    <use x="-5" y="10" xlink:href="#|" />
+                    <use x="0" y="10" xlink:href="#top-D" />
+                    <use x="0" y="10" xlink:href="#mid-R" />
+                </symbol>
+                <symbol id="M">
+                    <use x="0" y="10" xlink:href="#lsM" />
+                    <use x="0" y="10" xlink:href="#usM" />
+                    <use x="15" y="10" xlink:href="#usmlvM" />
+                    <use x="15" y="10" xlink:href="#usmrvM" />
+                    <use x="0" y="0" xlink:href="usmrlM" />
+                    <use x="15" y="10" xlink:href="usmrrM" />
+                </symbol>
+                <g>
+                    <use x="0" xlink:href="#E" />
+                    <use x="80" xlink:href="#S" />
+                    <use x="200" xlink:href="#D" />
+                    <use x="350" xlink:href="#E" />
+                    <use x="450" xlink:href="#R" />
+                    <use x="500" xlink:href="#M" />
+                </g>
+            </svg>
         </div>
-
-        <div class="main">
-            <div id="adivHome">
-                Welcome to ESDERM!
-                
+        <div class="rowButtons">
+            <div class="flexButton">
+                <a href="javascript:hideshow(document.getElementById('adivHome'))">Home</a>
             </div>
-
-            <div id="adivAbout">
-                Our crew:
+            <div class="flexButton">
+                <a href="javascript:hideshow(document.getElementById('adivAbout'))">About</a>
             </div>
-
-            <div id="adivServices">
-                Prices:
+            <div class="flexButton">
+                <a href="javascript:hideshow(document.getElementById('adivServices'))">Services</a>
             </div>
-
-            <div class="map-container" id="adivContact">
-                Contact us:
-                <a href="https://www.facebook.com/ESDERM.CENTRUM.MEDYCZNE/">
-                    <i class="fa fa-facebook-square" style="font-size:3vw;color:rgba(71,111,181,0.8)">
-
-                    </i>
-                </a>
-                <div id="map" style="clear:both; height:500px;"></div>
+            <div class="flexButton">
+                <a href="javascript:hideshow(document.getElementById('adivContact'))">Contact</a>
             </div>
-        </div>
-
-        <div class="footer">
-            <p id="date_string" />
-            <p>All copy rights reserved by ESDERM.</p>
         </div>
     </div>
+
+    <div class="main">
+        <div class="adivHomeClass" id="adivHome">
+        </div>
+
+        <div id="adivAbout">
+            Our crew:
+        </div>
+
+        <div id="adivServices">
+            Prices:
+        </div>
+
+        <div class="map-container" id="adivContact">
+            Contact us:
+            <a href="https://www.facebook.com/ESDERM.CENTRUM.MEDYCZNE/">
+                <i class="fa fa-facebook-square" style="font-size:3vw;color:rgba(71,111,181,0.8)">
+
+                </i>
+            </a>
+            <div id="map" style="clear:both; height:500px; background-color: rgba(0,52,104,0.5)"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p id="date_string">All copy rights reserved by ESDERM
+            <br/> </p>
+    </div>
+
 </body>
 <script type="text/javascript">
     let arrayOfSwitchedDivs = ["adivHome", "adivAbout", "adivServices", "adivContact"];
@@ -67,105 +234,111 @@
         }
     }
     function updateCurrentDate() {
-        document.getElementById("date_string").innerHTML = (new Date(Date.now()).getFullYear().toString());
+        document.getElementById("date_string").innerHTML = document.getElementById("date_string").innerHTML + "  " + (new Date(Date.now()).getFullYear().toString());
     }
     updateCurrentDate();
 </script>
 <script>
     function initMap() {
-      var uluru = {lat: 51.08954124121359, lng: 17.014914708702463};
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 14,
-        center: uluru,
-        styles: [
-            {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
-            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
-            {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
-            {
-              featureType: 'administrative.locality',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#d59563'}]
-            },
-            {
-              featureType: 'poi',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#d59563'}]
-            },
-            {
-              featureType: 'poi.park',
-              elementType: 'geometry',
-              stylers: [{color: '#263c3f'}]
-            },
-            {
-              featureType: 'poi.park',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#6b9a76'}]
-            },
-            {
-              featureType: 'road',
-              elementType: 'geometry',
-              stylers: [{color: '#38414e'}]
-            },
-            {
-              featureType: 'road',
-              elementType: 'geometry.stroke',
-              stylers: [{color: '#212a37'}]
-            },
-            {
-              featureType: 'road',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#9ca5b3'}]
-            },
-            {
-              featureType: 'road.highway',
-              elementType: 'geometry',
-              stylers: [{color: '#746855'}]
-            },
-            {
-              featureType: 'road.highway',
-              elementType: 'geometry.stroke',
-              stylers: [{color: '#1f2835'}]
-            },
-            {
-              featureType: 'road.highway',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#f3d19c'}]
-            },
-            {
-              featureType: 'transit',
-              elementType: 'geometry',
-              stylers: [{color: '#2f3948'}]
-            },
-            {
-              featureType: 'transit.station',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#d59563'}]
-            },
-            {
-              featureType: 'water',
-              elementType: 'geometry',
-              stylers: [{color: '#17263c'}]
-            },
-            {
-              featureType: 'water',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#515c6d'}]
-            },
-            {
-              featureType: 'water',
-              elementType: 'labels.text.stroke',
-              stylers: [{color: '#17263c'}]
-            }
-          ]
-      });
-      var marker = new google.maps.Marker({
-        position: uluru,
-        map: map
-      });
+        const currMonth = 0 + new Date().getDay() * 0.1
+        const diffRise = currMonth
+        const diffSet = currMonth
+        const sunrise = 5.66 + diffRise
+        const sunset = 16.75 + diffSet
+        const hours = new Date().getHours()
+        const isDayTime = hours > sunrise && hours < sunset
+        var uluru = { lat: 51.08954124121359, lng: 17.014914708702463 };
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 13,
+            center: uluru,
+            styles: isDayTime ? [] : [
+                { elementType: 'geometry', stylers: [{ color: '#242f3e' }] },
+                { elementType: 'labels.text.stroke', stylers: [{ color: '#242f3e' }] },
+                { elementType: 'labels.text.fill', stylers: [{ color: '#746855' }] },
+                {
+                    featureType: 'administrative.locality',
+                    elementType: 'labels.text.fill',
+                    stylers: [{ color: '#d59563' }]
+                },
+                {
+                    featureType: 'poi',
+                    elementType: 'labels.text.fill',
+                    stylers: [{ color: '#d59563' }]
+                },
+                {
+                    featureType: 'poi.park',
+                    elementType: 'geometry',
+                    stylers: [{ color: '#263c3f' }]
+                },
+                {
+                    featureType: 'poi.park',
+                    elementType: 'labels.text.fill',
+                    stylers: [{ color: '#6b9a76' }]
+                },
+                {
+                    featureType: 'road',
+                    elementType: 'geometry',
+                    stylers: [{ color: '#38414e' }]
+                },
+                {
+                    featureType: 'road',
+                    elementType: 'geometry.stroke',
+                    stylers: [{ color: '#212a37' }]
+                },
+                {
+                    featureType: 'road',
+                    elementType: 'labels.text.fill',
+                    stylers: [{ color: '#9ca5b3' }]
+                },
+                {
+                    featureType: 'road.highway',
+                    elementType: 'geometry',
+                    stylers: [{ color: '#746855' }]
+                },
+                {
+                    featureType: 'road.highway',
+                    elementType: 'geometry.stroke',
+                    stylers: [{ color: '#1f2835' }]
+                },
+                {
+                    featureType: 'road.highway',
+                    elementType: 'labels.text.fill',
+                    stylers: [{ color: '#f3d19c' }]
+                },
+                {
+                    featureType: 'transit',
+                    elementType: 'geometry',
+                    stylers: [{ color: '#2f3948' }]
+                },
+                {
+                    featureType: 'transit.station',
+                    elementType: 'labels.text.fill',
+                    stylers: [{ color: '#d59563' }]
+                },
+                {
+                    featureType: 'water',
+                    elementType: 'geometry',
+                    stylers: [{ color: '#17263c' }]
+                },
+                {
+                    featureType: 'water',
+                    elementType: 'labels.text.fill',
+                    stylers: [{ color: '#515c6d' }]
+                },
+                {
+                    featureType: 'water',
+                    elementType: 'labels.text.stroke',
+                    stylers: [{ color: '#17263c' }]
+                }
+            ]
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
     }
-  </script>
-<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXclGsjaWgaWTXAB_EtSCbZuuHLeX4MUA&callback=initMap">
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXclGsjaWgaWTXAB_EtSCbZuuHLeX4MUA&callback=initMap">
 </script>
 
 </html>

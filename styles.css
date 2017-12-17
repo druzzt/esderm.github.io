@@ -1,19 +1,26 @@
 html { 
+  background: linear-gradient(rgba(0,52,104,0.1), rgba(96,148,215,1.0), rgba(172,198,229,1.0));
   background: url(https://gdurl.com/YKgh);
+  background-color: rgba(96,148,215,1.0);
   background-repeat: no-repeat;
   background-size: cover;
  }
 body {margin:0;}
 
 .navbar {
-  overflow: hidden;
-  background-color: rgba(255,255,255,0.5);
+  /* overflow: hidden; */
+  background: linear-gradient(rgba(0,52,104,0.6), rgba(96,148,215,0.6), rgba(172,198,229,0.6));
   position: fixed;
   top: 0;
   width: 100%;
-  height: 35px;
+  height: 6vw;
   justify-content: center;
   align-content: center;
+  float: left;
+}
+
+.svgLogo {
+  margin: 1vw;
 }
 
 .navbar a {
@@ -23,28 +30,27 @@ body {margin:0;}
   justify-content: center;
   align-content: center;
   text-align: center;
-  /* padding: 1px 3px; */
-  margin: 5px;
+  margin-right: 3vw;
   text-decoration: none;
-  font-size: 19px;
+  font-size: 2.3vw;
 }
 
-.navbar img {
-  position: fixed;
-  top: 0;
-  left: 0;
+.flexButton {
+  flex: 1;
 }
-
-.navbar row {
-  flex-direction: row;
+.rowButtons {
+  flex: 1;
+  justify-content: center;
+  align-content: center;
 }
 
 .main {
-  /* margin: 5; */
-  /* padding: 16px; */
   margin-top: 120px;
-  /* height: 1500px; */
   width: 100%;
+}
+
+.adivHomeClass {
+  width: 50%;
 }
 
 .footer {
@@ -62,15 +68,13 @@ body {margin:0;}
 
 .map-container {
   width: 100%;
-  height: 500px;
 }
 
 .map {
-  width: 500px;
-  height: 500px;
-  background-color: grey;
+  background-color: rgba(0,52,104,0.5);
   position: absolute;
   bottom: 50;
   left: 50;
   right: 50;
 }
+
